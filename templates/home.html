@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Este es el sitio</h2>
-  <p>hola {{ user.username }}!</p>
+	<div class="container">
+		<p class="h3" align="center" style="padding-top: 50px">Bienvenido a nuestra app para obtener datos abiertos, <applet></applet><strong>{{user}}</strong></p>
+		<p class="lead" align="center" style="padding-top: 30px;">
+  			Ahora que estas logueado en nuestra app estas a un solo paso de poder obtener información acerca de la Cadena Productiva Cacao - Area, Producción Y Rendimiento en los departamentos de colombia.
+  		</p>
+	</div>
+	<div class="container" align="center" style="padding-top: 40px;">
+		<a href="{% url 'consulta' %}" class="btn btn-primary">Ir a consultar datos</a>
+</div>
 {% endblock %}

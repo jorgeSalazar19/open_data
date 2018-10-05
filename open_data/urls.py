@@ -5,6 +5,7 @@ from mysite import views as core_views
 
 urlpatterns = [
     path(r'', core_views.home, name='home'),
+    path(r'consulta/', core_views.consulta, name='consulta'),
     path('admin/', admin.site.urls),
     path(r'login/', auth_views.login, name='login'),
     path(r'logout/', core_views.logOut, name='logout'),

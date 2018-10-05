@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p class="h3" align="center" style="padding-top: 50px">Consulta de datos</p>
+<p class="lead" align="center" style="padding-top: 30px;">
+		Elige el departamento para el que quieres consultar los datos de producción de cacao.
+</p>
+
+<div class="container" align="center" style="padding-top: 20px">
+	<form method="POST"> {% csrf_token %}
+		<div class="form-group">
+			<div class="row">
+					<div class="col">
+						<select class="form-control form-control-sm" name = "departamento" required = "True">
+							{% for departamento in departamentos  %}
+								<option value="{{departamento.nombre}}">{{departamento.nombre}}</option>
+							{% endfor %}
+						</select>
+					</div>
+					<button type="submit" id="botonEnviar" class="btn btn-primary">Enviar</button>
+			</div>
+		</div>
+	</form>
+	
+	<div style="padding-bottom: 50px">
+			<a href="{% url 'home' %}" type="button" class="btn btn-warning" >Volver</a>
+			<a href="{% url 'consulta' %}" type="button" class="btn btn-primary" >Limpiar</a>
+	</div>
+
+	{{table | safe }}
+
+</div>
+	
+{% endblock content %}
