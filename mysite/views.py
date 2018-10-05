@@ -29,7 +29,7 @@ def consulta(request):
         client = Socrata("www.datos.gov.co", "5yzK70sZPLjXhV8ENN4xSiV29", username="jorgemsm12316@utp.edu.co" , password="Jorge970208" )
         departamento = request.POST.get('departamento')
         departamento = departamento.upper()
-        results = client.get("97ki-syuv", limit=1000)
+        results = client.get("97ki-syuv", limit=500)
         results_df = pd.DataFrame(results)
         lista = results_df[(results_df['departamento']==departamento)]
         lista = lista.rename(columns={   
