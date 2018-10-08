@@ -1,4 +1,4 @@
-# open_data
+# Datos Abiertos Producción de cacao
 este es un respositorio para un proyecto de la asignatura cliente servidor, en el cual se busca consumir recursos de datos abiertos luego de hacer login con la api de github.
 
 ## Pasos para instalación del proyecto
@@ -10,13 +10,13 @@ este es un respositorio para un proyecto de la asignatura cliente servidor, en e
   
   1. luego se procede a activarlo son el siguiente comando ```source bin/activate```, recuerde este comando solo          funciona si se esta dentro de la carpeta del entorno vistural creado. 
   
-1. UNa vez creado y activado el entorno virtual nos dirigimos a la carpeta que acabamos de descargar del repo en nuestro caso se llama open_data, una vez ahi ejecutamos el comando ```pip install -r requirements.txt``` el cual instalara las dependencias para que el proyecto funcione.
+1. Una vez creado y activado el entorno virtual nos dirigimos a la carpeta que acabamos de descargar del repo en nuestro caso se llama open_data, una vez ahi ejecutamos el comando ```pip install -r requirements.txt``` el cual instalara las dependencias para que el proyecto funcione.
 
-1.luego de esto se debe crear una base de datos de postgres con el nombre de open_data, visualizar el siguiente link para ver como crear base de datos https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04!
+1.luego de esto se debe crear una base de datos de postgres con el nombre de open_data, visualizar el siguiente link para ver como crear base de datos https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
 
+1. Una vez creada la base de datos procedemos a correr las migraciones pertinentes con el siguiente comando ```python manage.py migrate```.
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+1. Finalmente corremos el proyecto con el siguiente comando ```python manage.py runserver```.
+
+siguiendo estos pasos podremos correr nuestro proyecto de datos abiertos.
+
