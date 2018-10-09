@@ -91,7 +91,7 @@ def consulta(request):
         #se renombran los campos de la tabla que viene como resultado de la consulta(para mejor visualización)
         lista = lista.rename(columns={   
                     ' ':'id' ,
-                    'c_d_mun' : 'Codido Municipio',
+                    'c_d_mun' : 'Codigo Municipio',
                     'cultivo' : 'Cultivo',
                     'departamento' : 'Departamento',
                     'municipio' : 'Municipio',
