@@ -20,3 +20,5 @@ este es un respositorio para un proyecto de la asignatura cliente servidor, en e
 
 siguiendo estos pasos podremos correr nuestro proyecto de datos abiertos.
 
+link del tutorial que comtiene la información con la que fue desarrollado este proyecto https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html
+
